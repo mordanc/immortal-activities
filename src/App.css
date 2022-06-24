@@ -1,4 +1,19 @@
-.App {
+.immortal-brown {
+  color: rgb(173, 130, 84);
+  font-family: "Pathway Gothic One", sans-serif;
+  /* font-family: "MedievalSharp", cursive; */
+}
+.immortal-red {
+  color: rgb(110, 7, 0);
+  font-family: "Pathway Gothic One", sans-serif;
+  /* font-family: "MedievalSharp", cursive; */
+}
+
+.immortal-title {
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +50,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
