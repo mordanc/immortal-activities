@@ -27,7 +27,7 @@ export default function Card({
       <div className="text-2xl underline immortal-title text-gray-300">
         {title}
       </div>
-      <img className="rounded h-48" src={diablo} />
+      <img className="rounded h-48" src={diablo} alt="diablo image" />
       <span className="text-white">
         Location:{" "}
         <span className="font-bold immortal-brown text-xl ">{location}</span>

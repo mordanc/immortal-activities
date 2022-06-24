@@ -14,10 +14,10 @@ function ActivityPanel({ title = "", items = [] }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [card, setCard] = useState({});
 
-  const onCardClick = (cardInfo) => {
-    onOpen();
-    setCard(cardInfo);
-  };
+  // const onCardClick = (cardInfo) => {
+  //   onOpen();
+  //   setCard(cardInfo);
+  // };
 
   function scroll(element) {
     if (isOpen) return;

@@ -7,8 +7,6 @@ import ActivityPanel from "./components/ActivityPanel";
 import "./App.css";
 
 function App() {
-  const [show, setShow] = useState(false);
-
   return (
     <div className="flex flex-col h-screen justify-between bg-gradient-to-br from-immortal-brown to-gray-600 scroll-smooth">
       <div className="flex flex-col font-immortal">
