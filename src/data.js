@@ -57,3 +57,18 @@ export const shadowActivities = [
   { title: "Shadow Assembly" },
   { title: "Shadow War" },
 ];
+
+export const dungeons = [
+  {
+    title: "Cavern of Echoes",
+    location: "Frozen Tundra",
+    imagePath: "/assets/images/Cavern-of-Echoes.png",
+  },
+  { title: "Destruction's End", location: "Library of Zoltun Kulle" },
+  { title: "Forgotten Tower", location: "Dark Wood" },
+  { title: "Kikuras Rapids", location: "Bilefen" },
+  { title: "Mad King's Breach", location: "Ashwold Cemetary" },
+  { title: "Pit of Anguish", location: "Realm of Damnation" },
+  { title: "Temple of Namari", location: "Bilefen" },
+  { title: "Tomb of Fahir", location: "Shassar Sea" },
+];

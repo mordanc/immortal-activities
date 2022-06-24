@@ -1,5 +1,5 @@
 import React from "react";
-import diablo from "../diablo.jpeg";
+// import diablo from "public/assets/images/diablo.jpeg";
 import "../App.css";
 import maxrollLogo from "../maxroll-logo.png";
 import ExternalLink from "./ExternalLink";
@@ -11,6 +11,7 @@ export default function Card({
   times = [],
   onClick = () => {},
   hoverable = true,
+  imagePath = "/assets/images/diablo.jpeg",
 }) {
   const titleArray = title?.split(" ");
   const linkText = titleArray.reduce((prev, cur, index) => {
@@ -27,7 +28,12 @@ export default function Card({
       <div className="text-2xl underline immortal-title text-gray-300">
         {title}
       </div>
-      <img className="rounded h-48" src={diablo} alt="diablo image" />
+      {/* <img className="rounded h-48" src={diablo} alt="diablo image" /> */}
+      <img
+        className="rounded h-48"
+        src={process.env.PUBLIC_URL + imagePath}
+        alt="diablo image"
+      />
       <span className="text-white">
         Location:{" "}
         <span className="font-bold immortal-brown text-xl ">{location}</span>

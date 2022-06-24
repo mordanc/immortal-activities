@@ -10,7 +10,7 @@ import { useDisclosure } from "@chakra-ui/react";
 import Modal from "./Modal";
 import Card from "./Card";
 
-function ActivityPanel({ title = "", items = [] }) {
+function ActivityPanel({ title = "", items = [], isDisabled = false }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [card, setCard] = useState({});
 
@@ -30,7 +30,7 @@ function ActivityPanel({ title = "", items = [] }) {
   }
 
   return (
-    <AccordionItem>
+    <AccordionItem isDisabled={isDisabled} className="bg-immortal-brown">
       <Modal isOpen={isOpen} onOpen={onOpen} onClose={onClose} card={card} />
       <h2 className="bg-immortal-dark" id={title} onClick={() => scroll(title)}>
         <AccordionButton>
@@ -41,7 +41,7 @@ function ActivityPanel({ title = "", items = [] }) {
         </AccordionButton>
       </h2>
       <AccordionPanel pb={4}>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-2">
           {items.map((event) => (
             <Card
               key={event.title}
@@ -51,6 +51,7 @@ function ActivityPanel({ title = "", items = [] }) {
               times={event.times}
               // onClick={() => onCardClick(event)}
               hoverable={false}
+              imagePath={event.imagePath || "/assets/images/diablo.jpeg"}
             />
           ))}
         </div>
